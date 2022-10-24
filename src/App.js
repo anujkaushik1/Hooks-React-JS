@@ -20,7 +20,7 @@ function App() {
     
     <context.Provider value= {theme}>  {/* default value 'hello' ki jagah theme pass kra */}
       <button onClick={() => setTheme(!theme)}>Change Theme</button>
-      {/* <Us/> */}
+      {/* <Us/> */}        
       {/* <Ue1/> */}
       {/* <Ue2/> */}
       {/* <Infinite/> */}
