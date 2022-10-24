@@ -1,19 +1,15 @@
 import React, {useState, useEffect} from 'react'
 
-function Ue1() {
+function Ue2() {
 
     const [count, setCount] = useState(0);
 
-    useEffect(() => {   // just like componentDidMount and componentDidUpdate
-
-        // render ke baad chlega and jaise hi state update hogi tbh chlega
+    useEffect(() => {     // only componentDidMount jaisa -> sbse pehle render, useeffect => state change hone pr nai chlega yeh
 
         console.log("useEffect");
         document.title = `Button clicked ${count} times`
 
-        // side effects wala work   
-
-    })  // optional dependency array
+    }, [])  // optional dependency array
     console.log("render");
   return (
    
@@ -25,4 +21,4 @@ function Ue1() {
   )
 }
 
-export default Ue1
+export default Ue2
